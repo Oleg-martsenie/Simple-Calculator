@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    height: 20px;
+    position: absolute;
+    z-index: 1000;
+    margin: 10px 15px;
+}
+
+.logo {
+    font-size: 30px;
+    color: crimson;
+    font-weight: bold;
+    font-family:'Space Mono', monospace';
+}
+
+.logo span {
+    color: rgb(31, 4, 4);
+    font-size: 35px;
+}
+
+.back {
+    background-image: url(img/abre_salomao.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: #EEE;
+    font-weight: normal;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2px;
+    background-color: rgba(2, 0, 3, 0.226);
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    background-color: crimson;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 25px;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn.active0 {
+    height: 106px;
+}
+.btn.active1 {
+    width: 106px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color:rgba(189, 23, 23, 0.767);
+}
+
+#result {
+    width: 220px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.966);
+    margin: .5rem auto;
+    color: #051937;
+    text-align: right;
+    padding: 2px;
+    border-radius: 0px;
+    line-height: 40px;
+    font-family: 'Space Mono', monospace;
+}
